@@ -124,7 +124,7 @@ header a{
 
 #content #sidebar{
     background-color: aquamarine;
-    width: 80%;
+    width: 100%;
     max-width: 300px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.479);
     height: 500px;
