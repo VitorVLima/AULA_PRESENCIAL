@@ -51,7 +51,62 @@ header a{
     align-items: center;
 }
 
-.menu:hover, .search:hover{
+#menu .search{
+    
+    height: 120px;
+    flex-basis: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    /* classe inicialmente inativa */
+}
+
+.invisible{
+    height: 60px;
+    flex-basis: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    
+    /* classe inicialmente ativa */
+}
+
+#menu .invisible > i, #menu .search > i{
+   width: 60px;
+   flex-basis: 60px;
+  
+   text-align: center;
+   padding-top: 20px;
+}
+
+#menu #form{
+
+    width: 240px;
+    position: relative;
+    display: none;
+    /* display none inicialmente */
+ }
+
+ #menu #form .inSearch{
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px;
+ }
+
+ #menu #form .search-btn{
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 180px;
+ }
+ #menu #form .search-btn i{
+   font-size: 13px;
+ }
+
+.menu:hover, .invisible:hover , .search:hover{
     background-color: rgb(46, 100, 100);
 }
 
