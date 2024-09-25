@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Sem título.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dicas e Viagens</title>
+</head>
+<body>
+    <header>
+        <nav id="menu">
+            <div class="menu" id="bottomMenu">
+                <i class="fa-solid fa-bars" id="open-btn-icon"></i>
+            </div>
+
+            <div class="logo">
+                <img src="img/logo-favicon.png" alt="logo do site">
+                <h2>Dicas e Viagens</h2>
+            </div>
+
+            <div class="search" id="bottomSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+        <nav id="sidebar">
+            <ul class="items">
+                <li class="item"><a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="item-description">Home</span>
+                </a></li>
+
+                <li class="item"><a href="destinos.html">
+                    <i class="fa-solid fa-plane"></i>
+                    <span class="item-description">Destinos</span>
+                </a></li>
+
+                <li class="item category" id="bottomCat">
+                    <i class="fa-solid fa-list"></i>
+                    <span class="item-description">Categorias</span>
+            
+                    <ul class="subclass" id="subclass">
+                        <li class="subitems"><a href="categorias/regioes.html">Regiões</a></li>
+                        <li class="subitems"><a href="">Praia</a></li>
+                        <li class="subitems"><a href="">Viagem com a Familia</a></li>
+                        <li class="subitems"><a href="">Serra</a></li>
+                        <li class="subitems"><a href="">Cidades Históricas</a></li>
+
+                    </ul>
+                
+            </li>
+
+                <li class="item"><a href="">
+                    <i class="fa-solid fa-hashtag"></i>
+                    <span class="item-description">Redes Sociais</span>
+                </a></li>
+
+                <li class="item"><a href="">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="item-description">Fale Conosco</span>
+                </a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Conteudos</h2>
+        </main>
+    </div>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

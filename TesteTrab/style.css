@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    background-color: aquamarine;
+    height: 60px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.479);
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+}
+
+#content{
+    display: flex;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px
+}
+
+#menu div{
+    height: 60px;
+    flex-basis: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#menu div i{
+    font-size: 20px;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
+#menu div.logo{
+    flex-basis: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu:hover, .search:hover{
+    background-color: rgb(46, 100, 100);
+}
+
+.logo img {
+    width: 60px;
+
+}
+
+#content #sidebar{
+    background-color: aquamarine;
+    width: 80%;
+    max-width: 300px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.479);
+    height: 500px;
+
+}
+
+#sidebar{
+    border-radius: 10px;
+    display: none;
+    z-index: 2;
+    opacity: 0; /* Opacidade inicial */
+    transition: opacity 0.5s ease; /* Transição de opacidade */
+}
+
+#sidebar.visible {
+    display: block; /* Exibir o sidebar */
+    opacity: 1; /* Opacidade total */
+}
+
+
+#sidebar .items{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar .items .item {
+    font-size: 20px;
+    text-shadow: 0px 0px 5px black;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+#sidebar .items .item:hover {
+   background-color: rgb(46, 100, 100);
+   border: 1px solid black;
+}
+
+#sidebar .items .item > a{
+    text-decoration: none;
+    color: white;
+    
+    padding: 10px;
+    flex: auto;
+}
+.item.category{
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+
+.item.category ul{
+    
+    list-style: none;
+    flex-basis: 400px;
+    font-size: 15px;
+    display: none;
+}
+
+.item.category ul li{
+    height: 30px;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    
+    border-radius: 5px;
+}
+
+.item.category ul li:hover{
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.item.category ul li>a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+
+
+
+main{
+    padding: 10px;
+    z-index: 1;
+    position: fixed;
+}

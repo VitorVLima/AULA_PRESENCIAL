@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Simples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Buscador de Itens</h1>
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Buscar itens...">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="results"></div>
+
+    <script>
+        // Lista de itens para buscar
+        const items = [
+            'Maçã',
+            'Banana',
+            'Laranja',
+            'Uva',
+            'Pera',
+            'Manga',
+            'Cereja'
+        ];
+
+        // Referência ao formulário e ao campo de entrada
+        const form = document.getElementById('searchForm');
+        const input = document.getElementById('searchInput');
+        const resultsDiv = document.getElementById('results');
+
+        // Função para exibir os itens correspondentes
+        function displayResults(results) {
+            resultsDiv.innerHTML = ''; // Limpa resultados anteriores
+            if (results.length === 0) {
+                resultsDiv.innerHTML = '<p>Nenhum item encontrado.</p>';
+            } else {
+                const ul = document.createElement('ul');
+                results.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    ul.appendChild(li);
+                });
+                resultsDiv.appendChild(ul);
+            }
+        }
+
+        // Evento de envio do formulário
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            const searchTerm = input.value.toLowerCase();
+            const filteredItems = items.filter(item => 
+                item.toLowerCase().includes(searchTerm)
+            );
+            displayResults(filteredItems); // Mostra os resultados
+        });
+    </script>
+
+</body>
+</html>

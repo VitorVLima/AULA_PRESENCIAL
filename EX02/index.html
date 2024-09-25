@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        #fora {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            background-color: aqua;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 100px;
+            align-items: center;
+        }
+
+        .dentro {
+            text-align: center;
+            background-color: blue;
+            width: 120px;
+            height: 100px;
+            text-align: center;
+        }
+
+        main {
+            background-color: chartreuse;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #destaques {
+            height: 20%;
+            display: flex;
+            background-color: rgb(247, 246, 248);
+            margin: auto;
+            flex-wrap: wrap;
+            padding: 10px;
+            justify-content: space-evenly;
+            gap: 10px; /* Espaçamento entre os itens */
+        }
+
+        .pg {
+            width: 400px;
+            height: 300px;
+            background-color: bisque;
+            flex: auto;
+            border: 1px solid black;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Adicionando a transição */
+            display: flex;
+            overflow: hidden;
+        }
+
+        .pg:hover {
+            background-color: lightcoral; /* Mudança de cor ao passar o mouse */
+            transform: scale(1.02); /* Levemente aumenta o tamanho ao   passar o mouse */
+        }
+
+        .cat {
+            background-color: blanchedalmond;
+            width: 400px;
+            height: 400px;
+        }
+
+        .titulos {
+            padding: 20px;
+            background-color: brown;
+            text-align: center; /* Centraliza o texto do título */
+            color: white; /* Cor do texto do título */
+        }
+        img{
+            flex: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="fora">
+        <div class="dentro">IICONE DO MENU</div>
+        <div class="dentro">LOGO DO SITE</div>
+        <div class="dentro">ICONE DE PESQUISA</div>
+    </div>
+
+    <main>
+        <div id="destaques">
+            <section class="pg">pag1</section>
+            <section class="pg">pag2</section>
+            <section class="pg">Pag 3</section>
+        </div>
+        <div class="titulos"><h2>CATEGORIAS</h2></div>
+        <div id="destaques">
+            <section class="cat">Categoria 1</section>
+            <section class="cat">Categoria 2</section>
+            <section class="cat">Categoria 3</section>
+            <section class="cat">Categoria 4</section>
+        </div>
+    </main>
+</body>
+</html>
+

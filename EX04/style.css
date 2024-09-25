@@ -1,0 +1,41 @@
+ @media screen and (max-width: 650px){ 
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body{
+        background-color: aquamarine;
+    }
+
+    header{
+       display: block;
+    }
+
+    .items{
+        list-style-type: none;
+        display:block;
+        
+    }
+    
+    .cSiteName{
+        list-style-type: none;
+        display: block;
+        
+        flex: 1 0;
+    }
+
+    #siteName{
+        color: white;
+        text-align: center;
+        text-shadow: 2px 3px 3px black;
+    }
+    
+    .item{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 0px;
+}
