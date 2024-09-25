@@ -59,6 +59,13 @@ header a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
+    background-color: rgb(46, 100, 100);
+    border-radius: 10px 0px 0px 10px;
+    /* classe inicialmente inativa */
+}
+
+#menu .search i:hover{
+    background-color: aquamarine;
     /* classe inicialmente inativa */
 }
 
