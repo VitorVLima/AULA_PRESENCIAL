@@ -7,6 +7,7 @@ searchImput.addEventListener('input', (event) => {
     if(value != ''){
         items.forEach(item => {
         const itemTitle = item.querySelector('.item-title').textContent;
+        
         if(formatString(itemTitle).indexOf(value) !==-1){
             item.style.display = 'flex';  
             hasResults = true;  
