@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    background-color: blueviolet;
+}
+
+header #sidebar{
+    border: 1px solid black;
+    width: 100vw;
+    height: 500px;
+    background-color: mediumblue;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+     /* display none inicialmente  */
+     display: none;
+}
+
+header #sidebar .closeSidebarBottom{
+    border: 1px solid black;
+   
+}
+
+header #sidebar .closeSidebarBottom i{
+    
+    float: right;
+    font-size: 30px;
+}
+
+header #sidebar .sidebarItems{
+   
+    list-style: none;
+}
+
+header #sidebar .sidebarItem{
+    list-style: none;
+    font-size: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.473);
+}
+
+header #sidebar .sidebarItem#sidebarItemDestinos{
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header #sidebar .sidebarItem#sidebarItemDestinos:hover{
+    background-color: dodgerblue;
+}
+
+.sidebarSubItems{
+    /* display none inicialmente  */
+}
+
+.sidebarSubItems .sidebarSubItem{
+    height: 30px;
+}
+
+.sidebarSubItems .sidebarSubItem a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sidebarSubItems .sidebarSubItem a:hover{
+   background-color: mediumblue;
+   border: 1px solid rgba(0, 0, 0, 0.452);
+}
+
+
+header #sidebar .sidebarItem > a{
+   display: block;
+   text-decoration: none;
+    color: white;
+   padding: 10px;
+   text-align: center;
+}
+
+header #sidebar .sidebarItem > a:hover{
+    background-color: dodgerblue;
+ }
+ 
+
+
+header #menu{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+header #menu .sidebarBottom{
+    border: 1px solid black;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #menu .sidebarBottom i{
+    font-size: 30px;
+    
+}
+
+header #menu .logo{
+    border: 1px solid black;
+}
+
+header #menu .logo img{
+    height: 70px;
+    width: 200px;
+}
+
+header #menu .menuItems{
+    display: none;
+}
+
+header #menu .searchContainer{
+    width: 100%;
+    text-align: center;
+}
+
+header #menu .searchContainer #search{
+    height: 40px;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding-left: 5px;
+}
+
+header #menu .searchContainer #searchBottom{
+    height: 30px;
+    width: 35px;
+    translate: -45px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: none;
+}
+
+
+
+
+
+
+
