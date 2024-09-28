@@ -1,4 +1,4 @@
-@media screen and (min-width: 600px){
+@media screen and (min-width: 855px){
 
     header #menu .sidebarBottom{
         display: none;
@@ -6,5 +6,94 @@
 
     header #menu .menuItems{
         display: flex;
+        list-style: none;
+    }
+
+    
+    header #menu{
+        justify-content: flex-start;
+        padding: 20px;
+        gap: 15px;
+    }
+
+
+    header #menu .menuItems .menuItem>a{
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    } 
+
+    header #menu .menuItems .menuItem>a:hover{
+        background-color: darkgray;
+        border-radius: 10px;
+    } 
+
+    header #menu .menuItems #menuItemDestinos{
+       
+
+        text-align: center;
+        cursor: pointer;
+        padding: 10px;
+        margin-top: -10px;
+        height: 40px;
+    } 
+
+    header #menu .menuItems #menuItemDestinos:hover{
+        background-color: darkgray;
+        border-radius: 10px;
+    } 
+
+
+    .menuSubItems{
+        list-style: none;
+        /* inicialmente display none*/
+        
+    }
+
+    .menuSubItem{
+        width: 100px;
+    }
+
+    .menuSubItem a{
+        display: block;
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        padding: 5px;
+    }
+
+    .menuSubItem a:hover{
+        border-radius: 10px;
+        background-color: darkgray;
+    }
+
+    header #menu .searchContainer{
+        padding-top: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px){
+    header #menu{
+        flex-wrap: nowrap;
+    }
+
+    header #menu .menuItems .menuItem>a{
+        text-decoration: none;
+        padding: 10px;
+    } 
+
+    header #menu .menuItems{
+        flex-grow: 1;
+    } 
+
+    header #menu .menuItems .menuItem{
+        
+
+    } 
+
+    header #menu .searchContainer{
+        width: 300px;
     }
 }
